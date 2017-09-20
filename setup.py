@@ -32,14 +32,14 @@ def get_install_requires():
 
 
 setup(
-    name='python-jose',
+    name='python-jose-cryptodome',
     version=jose.__version__,
     author='Michael Davis',
     author_email='mike.philip.davis@gmail.com',
-    description='JOSE implementation in Python',
+    description='JOSE implementation in Python using pycryptodome',
     license='MIT',
     keywords='jose jws jwe jwt json web token security signing',
-    url='http://github.com/mpdavis/python-jose',
+    url='http://github.com/capless/python-jose-cryptodome',
     packages=get_packages('jose'),
     long_description=long_description,
     classifiers=[
@@ -48,7 +48,6 @@ setup(
         'Natural Language :: English',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
