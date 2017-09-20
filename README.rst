@@ -1,7 +1,8 @@
-python-jose
+python-jose-cryptodome
 ===========
 
-A JOSE implementation in Python
+A JOSE implementation in Python using pycryptodome instead pycrypto.
+Stop using pycrypto use pycryptodome_.
 
 |Build Status| |Coverage Status| |Docs|
 
@@ -19,8 +20,8 @@ to meet their needs.
 Principles
 ----------
 
-This is a JOSE implementation that is fully compatible with Google App Engine
-which requires the use of the PyCrypto library.
+This is a JOSE implementation that is not compatible with Google App Engine
+as it uses pycryptodome.
 
 
 Installation
@@ -28,8 +29,7 @@ Installation
 
 ::
 
-    $ pip install python-jose
-
+    $ pip install python-jose-cryptodome
 
 Usage
 -----
@@ -49,11 +49,13 @@ Thanks
 
 This library was originally based heavily on the work of the folks over at PyJWT_.
 
-.. |Build Status| image:: https://travis-ci.org/mpdavis/python-jose.svg?branch=master
-   :target: https://travis-ci.org/mpdavis/python-jose
-.. |Coverage Status| image:: http://codecov.io/github/mpdavis/python-jose/coverage.svg?branch=master
-   :target: http://codecov.io/github/mpdavis/python-jose?branch=master
+.. |Build Status| image:: https://travis-ci.org/capless/python-jose-cryptodome.svg?branch=master
+   :target: https://travis-ci.org/capless/python-jose-cryptodome
+.. |Coverage Status| image:: http://codecov.io/github/capless/python-jose-cryptodome/coverage.svg?branch=master
+   :target: http://codecov.io/github/capless/python-jose-cryptodome?branch=master
 .. |Docs| image:: https://readthedocs.org/projects/python-jose/badge/
    :target: https://python-jose.readthedocs.org/en/latest/
 .. _ReadTheDocs: https://python-jose.readthedocs.org/en/latest/
 .. _PyJWT: https://github.com/jpadilla/pyjwt
+.. _pycryptodome: https://blog.sqreen.io/stop-using-pycrypto-use-pycryptodome/
+
