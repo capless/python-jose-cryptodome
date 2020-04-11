@@ -3,10 +3,14 @@ import binascii
 import json
 
 from calendar import timegm
-from collections import Mapping
 from datetime import datetime
 from datetime import timedelta
 from six import string_types
+
+try:
+    from collections.abc import Mapping
+except ImportError:
+    from collections import Mapping
 
 from jose import jws
 

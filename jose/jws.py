@@ -3,7 +3,10 @@ import binascii
 import json
 import six
 
-from collections import Mapping, Iterable
+try:
+    from collections.abc import Mapping, Iterable
+except ImportError:
+    from collections import Mapping, Iterable
 
 from jose import jwk
 from jose.constants import ALGORITHMS
