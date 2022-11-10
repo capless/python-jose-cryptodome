@@ -3,7 +3,7 @@ import binascii
 import json
 import six
 
-from collections import Mapping, Iterable
+from collections.abc import Mapping, Iterable
 
 from jose import jwk
 from jose.constants import ALGORITHMS
